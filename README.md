@@ -31,7 +31,16 @@ Controllers have been created for each Api, these call the relevant service
 Seperating the database and business logic from the controllers is a more flexible approach, and changes would be needed in fewer places if, for example, the database engine was changed.  
 
 This layout/principle is my preferred way for implementing software as it allows a better seperation of concerns.  I see Web Api as a host, hence why the host doesnt contain business logic
- 
+
+Post is used for searching.  Get is used for simple method calling, and for Adding/Updating ratings 
+
+# Running System
+Load solution and run ensuring Web Api is the start up project.  A browser is NOT loaded.
+
+The root is http://localhost:51286 
+
+The system can be tested either by looking at/running the Api Client tests or using PostMan
+
 # Tests
 
 Several tests have been implemented to test functionality.  Some of these may only work once due to them changing data (only 1 or 2)
