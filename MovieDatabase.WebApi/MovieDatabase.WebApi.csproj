@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.2" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.4.0" />
+    <PackageReference Include="Autofac.WebApi" Version="3.1.0" />
+    <PackageReference Include="Fody" Version="4.2.1" />
+    <PackageReference Include="LoadAssembliesOnStartup.Fody" Version="3.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MovieDatabase.Db\MovieDatabase.Db.csproj" />
+    <ProjectReference Include="..\MovieDatabase.Common\MovieDatabase.Common.csproj" />
+    <ProjectReference Include="..\MovieDatabase.Services\MovieDatabase.Services.csproj" />
+  </ItemGroup>
+
+</Project>
